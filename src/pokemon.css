@@ -1,0 +1,136 @@
+.logo{
+  filter: drop-shadow(0 0 5px rgb(251, 255, 0));
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 150px;
+  z-index: 150;
+}
+.pokemon-container{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  color: white;
+}
+.info-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 75%;
+  position: relative;
+}
+.desplazamiento{
+  transform: translate(160px);
+  border-radius: 2px !important;
+}
+.desplazamiento2{
+  transform: translate(-100px);
+}
+.img-container{
+  height: 60vh;
+  width: 100%;
+  background-color: #bbbbbb;
+  border-radius: 50px 2px;
+  margin: 20px;
+  z-index: 100;
+  border: 20px solid #c2c2c2;
+  outline: 5px solid #6b6b6b;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+.flecha{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
+  color: #ff624e;
+
+  &:disabled{
+    color: rgb(192, 192, 192);
+  }
+}
+.pokemon-img{
+  width: 320px;
+  filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+  transition: ease-in-out 4s;
+}
+.text-container{
+  position: relative;
+  width: 55vw;
+  background-color: #cf1800;
+  padding: 25px 50px;
+  border-radius: 20px;
+  margin-left: -250px;
+  padding-left: 280px;
+  border: 8px solid #af1400;
+  height: 80vh;
+  transition: all 1s;
+}
+.text-position{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.transicion{
+  transition: ease-in 1.5s;
+}
+.ocultar{
+  opacity: 0;
+  transition: none;
+}
+.mostrar{
+  opacity: 1;
+}
+.boton{
+  border-radius: 100%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  z-index: 100;
+  transition: all 1s;
+  outline: none;
+}
+.encendido{
+  background-color: rgb(1, 172, 1);
+  filter: drop-shadow(0px 0px 25px rgb(177, 252, 177));
+  right: 20px;
+  top: 10px;
+  border: 1px solid gray;
+}
+.apagado{
+  background-color: darkolivegreen;
+  right: 20px;
+  top: 10px;
+}
+.cries-button{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.Buscador-input{
+  background-color: #b61500;
+  border-top: 0;
+  border-left: 0;
+  margin-bottom: 10px;
+  outline: 0;
+  text-align: right;
+  color: white;
+  font-size: 18px;
+  width: 240px;
+}
+.buscador{
+  position: absolute;
+  left: 25px;
+  bottom: 5px;
+}
+.buscador-boton{
+  margin: 0 5px;
+}
