@@ -15,10 +15,10 @@ const PokemonCries = ({ pokemons }) => {
       {
         pokemons.cries && (
           <div>
-            <button className='cries-button' onClick={() => playAudio(latestAudioRef)}><AiFillSound /></button>
+            <button className='cries-button' onClick={() => playAudio(latestAudioRef)}>Latest Crie <AiFillSound /></button>
             <audio ref={latestAudioRef} src={pokemons.cries.latest}></audio>
             <br />
-            <button className='cries-button' onClick={() => playAudio(legacyAudioRef)}><AiFillSound /></button>
+            <button className='cries-button' onClick={() => playAudio(legacyAudioRef)}>Legacy Crie <AiFillSound /></button>
             <audio ref={legacyAudioRef} src={pokemons.cries.legacy}></audio>
           </div>
         )  
